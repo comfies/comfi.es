@@ -1,3 +1,18 @@
+@font-face {
+	font-family: "Fira Mono";
+	src: url(./font/FiraMono-Regular.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: "Indie Flower";
+	src: url(./font/IndieFlower-Regular.ttf) format("truetype");
+}
+
+::selection {
+	background-color: #111111;
+	color: #ebe5d7;
+}
+
 html {
 	font-size: 1.2em;
 }
@@ -21,6 +36,10 @@ section {
 	padding: 2em;
 	margin: 3em 0;
 	border: 1px solid black;
+}
+
+p {
+	text-align: justify;
 }
 
 ul {
