@@ -1,0 +1,52 @@
+html {
+	font-size: 1.2em;
+}
+
+body {
+	margin: 3em;
+	background: #ebe5d7;
+	color: #111111;
+	font-family: "Fira Mono", monospace;
+}
+
+h1 {
+	margin: 1rem 0;
+	font-weight: normal;
+	font-family: "Indie Flower", cursive;
+	font-size: 2.5em;
+}
+
+section {
+	width: 40%;
+	padding: 2em;
+	margin: 3em 0;
+	border: 1px solid black;
+}
+
+ul {
+	margin: 1rem 0;
+	padding-left: 4ch;
+	list-style: none;
+}
+
+li {
+	position: relative;
+}
+
+li::before {
+	content: "- ";
+	position: absolute;
+	left: -2ch;
+}
+
+a {
+	color: #111111;
+	text-decoration: underline, wavy, currentColor;
+	font-family: "Indie Flower", cursive;
+}
+
+@media (orientation: portrait) {
+	section {
+		width: unset;
+	}
+}
