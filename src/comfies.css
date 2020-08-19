@@ -32,9 +32,9 @@ h1 {
 }
 
 section {
-	width: 40%;
+	width: 50vw;
 	padding: 2rem;
-	margin: 3rem 0;
+	margin: 3rem auto;
 	border: 1px solid black;
 }
 
@@ -62,6 +62,13 @@ a {
 	color: #111111;
 	text-decoration: underline, wavy, currentColor;
 	font-family: "Indie Flower", cursive;
+	font-size: 1.2em;
+}
+
+@media (max-aspect-ratio: 4 / 3) {
+	section {
+		width: 60vw;
+	}
 }
 
 @media (orientation: portrait) {
