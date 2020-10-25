@@ -24,12 +24,18 @@ body {
 	font-family: "Fira Mono", monospace;
 }
 
-h1 {
+h1, h2, h3 {
 	margin: 1rem 0;
 	font-weight: normal;
 	font-family: "Indie Flower", cursive;
-	font-size: 2.5em;
 }
+
+h1 a, h2 a, h3 a {
+	font-size: smaller;
+}
+
+h1 { font-size: 2.5em }
+h2 { font-size: 2em }
 
 section {
 	width: 50vw;
