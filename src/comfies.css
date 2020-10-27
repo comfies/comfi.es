@@ -71,6 +71,12 @@ a {
 	font-size: 1.2em;
 }
 
+a[disabled] {
+	opacity: 0.5;
+	cursor: default;
+	pointer-events: none;
+}
+
 @media (max-aspect-ratio: 4 / 3) {
 	section {
 		width: 60vw;
