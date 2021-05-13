@@ -3,6 +3,11 @@
 	src: url(./font/FiraMono-Regular.ttf) format("truetype");
 }
 
+@font-face {
+	font-family: "Indie Flower";
+	src: url(https://comfi.es/src/font/IndieFlower-Regular.ttf) format("truetype");
+}
+
 ::selection {
 	background-color: #111111;
 	color: #ebe5d7;
