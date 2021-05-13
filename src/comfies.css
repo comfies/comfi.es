@@ -3,11 +3,6 @@
 	src: url(./font/FiraMono-Regular.ttf) format("truetype");
 }
 
-@font-face {
-	font-family: "Indie Flower";
-	src: url(./font/IndieFlower-Regular.ttf) format("truetype");
-}
-
 ::selection {
 	background-color: #111111;
 	color: #ebe5d7;
@@ -75,6 +70,12 @@ a[disabled] {
 	opacity: 0.5;
 	cursor: default;
 	pointer-events: none;
+}
+
+#webcircle {
+	width: 100%;
+	min-width: 300px;
+	height: calc(1.2em * 1.2);
 }
 
 @media (max-aspect-ratio: 4 / 3) {

@@ -1,0 +1,37 @@
+@font-face {
+	font-family: "Indie Flower";
+	src: url(https://comfi.es/src/font/IndieFlower-Regular.ttf) format("truetype");
+}
+
+body {
+	margin: 0;
+	background: #ebe5d7;
+	color: #111111;
+	font-family: "Fira Mono", monospace;
+	font-size: 1.2em;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	text-transform: lowercase;
+}
+
+a {
+	color: #111111;
+	text-decoration: underline, wavy, currentColor;
+	font-family: "Indie Flower", cursive;
+	font-size: 1.2em;
+}
+
+#prev {
+	order: 0;
+}
+
+#all {
+	order: 1;
+	margin: 0 1ch;
+}
+
+#next {
+	order: 2;
+}
