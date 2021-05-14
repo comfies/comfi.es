@@ -48,20 +48,29 @@ p {
 	text-align: justify;
 }
 
-ul {
+ul, ol {
 	margin: 1rem 0;
 	padding-left: 4ch;
 	list-style: none;
+	counter-reset: friends;
 }
 
 li {
 	position: relative;
 }
 
-li::before {
+ul li::before {
 	content: "- ";
 	position: absolute;
 	left: -2ch;
+}
+
+ol li::before {
+	counter-increment: friends;
+	content: counter(friends) ". ";
+	position: absolute;
+	right: calc(100% + 1ch);
+	text-align: right;
 }
 
 a {
@@ -90,8 +99,14 @@ a[disabled] {
 }
 
 @media (orientation: portrait) {
+	body {
+		margin: 2rem;
+	}
+
 	section {
 		width: unset;
+		padding: 2rem;
+		margin: 2rem 0;
 	}
 }
 
